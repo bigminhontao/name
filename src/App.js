@@ -4,6 +4,8 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import React from 'react';
 import { Carousel } from 'antd';
 import { Collapse } from 'antd';
+import MyFirstComponent from './component/myfirst';
+import MyTwoComponent from './component/mysecond';
 
 
 const { Header, Content, Sider } = Layout;
@@ -99,7 +101,7 @@ const App = () => {
               background: colorBgContainer,
             }}
           >
-    <Carousel afterChange={onChange}>
+    {/* <Carousel afterChange={onChange}>
       <div>
         <h3 style={contentStyle}>1</h3>
       </div>
@@ -123,7 +125,9 @@ const App = () => {
       <Panel header="This is panel header 3" key="3">
         <p>{text}</p>
       </Panel>
-    </Collapse>             
+    </Collapse>      */}
+    <MyFirstComponent/>
+    <MyTwoComponent/>
           </Content>
           
         </Layout>
